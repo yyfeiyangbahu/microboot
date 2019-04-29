@@ -1,2 +1,3 @@
 # microboot
-hello   microboot
+hello world
+microboot
