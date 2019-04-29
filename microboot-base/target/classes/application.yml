@@ -1,0 +1,57 @@
+spring:
+  profiles:
+    active: dev
+---
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml      #mybatis配置文件所在路径
+  type-aliases-package: cn.mldn.microboot.vo              #定义所有操作类的别名所在包
+  mapper-locations:                                       #所有的mapper映射文件
+  - classpath:mybatis/mapper/**/*.xml
+spring:          #表示该配置直接为Spring容器负责处理
+  thymeleaf:
+    suffix: .html   #修改默认后缀，默认为.html
+  messages:        #表示进行资源配置
+    basename: i18n/Messages,i18n/Pages   #资源文件名称
+  #jms:
+   # pub-sub-domain: false     #配置消息的类型，如果是true则表示为topic消息，如果为false表示Queue消息
+ # activemq:
+  #  user: admin     #连接用户名
+  #  password: admin   #连接密码
+  #  broker-url: tcp://0.0.0.0:61616         #消息组件的连接主机信息 
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource   #配置当前要使用的数据源的操作类型那个
+    driver-class-name: org.gjt.mm.mysql.Driver       #配置MySQL的驱动程序类
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: 123456
+    filters: stat,wall,log4j     #druid监控配置
+    dbcp2:
+      min-idle: 5         #数据库连接池的最小维持连接数
+      initial-size: 5     #初始化提供的连接数
+      max-total: 5          #最大的连接数
+      max-wait-millis: 200        #等待连接获取的最大超时时间
+#  http:
+#    multipart:
+#      enabled: true   #可以启用http上传
+#      max-file-size: 10Mb   #设置支持的单个上传文件的大小限制
+#      max-request-size: 20Mb  #设置最大的请求的文件大小，设置总体大小请求
+#      file-size-threshold: 512Kb  #当上传文件达到制定配置量的时候会将文件内容写入磁盘
+#      location: /   #设置上传的临时目录    
+  profiles: dev    
+server:
+  port: 80     #设置端口
+---
+spring:          #表示该配置直接为Spring容器负责处理
+  messages:        #表示进行资源配置
+    basename: i18n/Messages,i18n/Pages   #资源文件名称
+  profiles: beta    
+server:
+  port: 9090     #设置端口 
+---
+spring:          #表示该配置直接为Spring容器负责处理
+  messages:        #表示进行资源配置
+    basename: i18n/Messages,i18n/Pages   #资源文件名称
+  profiles: product    
+server:
+  port: 80     #设置端口   
+  

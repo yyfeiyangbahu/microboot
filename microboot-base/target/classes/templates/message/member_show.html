@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SpringBoot模板渲染</title>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+	<!--     <p th:text="'编号：'+${member.mid}"/>
+    <p th:text="'年龄：'+${member.age}"/>
+    <p th:text="'薪水：'+${member.selary}"/>
+    <p th:text="'日期：'+${#dates.format(member.birthday,'yyyy-MM-dd')}"/> -->
+	
+	
+	<div th:object="${member}">
+		<p th:text="'编号：'+*{mid}" />
+		<p th:text="'年龄：'+*{age}" />
+		<p th:text="'薪水：'+*{selary}" />
+		<p th:text="'日期：'+*{#dates.format(birthday,'yyyy-MM-dd')}" />
+	</div>
+	<hr/>
+	<span th:unless="${member.age gt 18}">
+	未成年人不能看电影！！！
+	</span>
+	<span th:if="${member.age lt 18}">
+	未成年人！！！
+	</span>
+	<span th:if="${member.mid eq '101'}">
+	欢迎
+	</span>
+	<span th:switch="${member.mid}">
+	  <p th:case="103">101</p>
+	  <p th:case="102">102</p>
+	  <p th:case="*">没有</p><!-- *为否则 -->
+	</span>
+</body>
+
+</html>

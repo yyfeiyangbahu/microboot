@@ -1,0 +1,476 @@
+2018-10-23 14:44:19.288 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Starting StartSpringBootMain on RJW with PID 126108 (F:\yang\microboot\microboot-base\target\classes started by Administrator in F:\yang\microboot\microboot-base)
+2018-10-23 14:44:19.289 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				The following profiles are active: dev
+2018-10-23 14:44:19.291 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0b0389: startup date [Tue Oct 23 14:44:19 CST 2018]; root of context hierarchy
+2018-10-23 14:44:19.878 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory -
+				Server initialized with port: 80
+2018-10-23 14:44:19.878 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				jetty-9.4.5.v20170502
+2018-10-23 14:44:19.881 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				DefaultSessionIdManager workerName=node0
+2018-10-23 14:44:19.881 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				No SessionScavenger set, using defaults
+2018-10-23 14:44:19.881 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				Scavenging every 600000ms
+2018-10-23 14:44:19.882 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring embedded WebApplicationContext
+2018-10-23 14:44:19.882 [restartedMain] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 591 ms
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 14:44:19.929 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 14:44:19.930 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-23 14:44:19.934 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3aacbb55{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.3439436566508224270.80/],AVAILABLE}
+2018-10-23 14:44:19.934 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				Started @1325104ms
+2018-10-23 14:44:20.267 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0b0389: startup date [Tue Oct 23 14:44:19 CST 2018]; root of context hierarchy
+2018-10-23 14:44:20.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/map],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.map(org.springframework.ui.Model)
+2018-10-23 14:44:20.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/add],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.add(cn.mldn.microboot.vo.Member,org.springframework.validation.BindingResult)
+2018-10-23 14:44:20.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/get]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.get()
+2018-10-23 14:44:20.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/list],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.list(org.springframework.ui.Model)
+2018-10-23 14:44:20.278 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/set],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.set(org.springframework.ui.Model)
+2018-10-23 14:44:20.279 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/member_get],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.getMember(java.lang.String)
+2018-10-23 14:44:20.279 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/member_show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberShow(org.springframework.ui.Model)
+2018-10-23 14:44:20.279 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAddPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberAddPre()
+2018-10-23 14:44:20.279 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.memberAdd(cn.mldn.microboot.vo.Member)
+2018-10-23 14:44:20.279 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.addPre()
+2018-10-23 14:44:20.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/test]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.test()
+2018-10-23 14:44:20.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/object]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.object(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:44:20.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.echo(java.lang.String,org.springframework.ui.Model)
+2018-10-23 14:44:20.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.home()
+2018-10-23 14:44:20.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/inner],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.inner(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/list],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.list()
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.addPre()
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/updateStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.updatePre()
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/delStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.delPre()
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentAdd(cn.mldn.microboot.vo.Student)
+2018-10-23 14:44:20.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentUpdate],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(cn.mldn.microboot.vo.Student)
+2018-10-23 14:44:20.282 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentDel],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(java.lang.Integer)
+2018-10-23 14:44:20.282 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/uploadPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.uploadPre()
+2018-10-23 14:44:20.282 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/upload],methods=[POST]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.upload(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-23 14:44:20.283 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 14:44:20.284 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:44:20.300 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:44:20.300 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:44:20.308 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+				Detected @ExceptionHandler methods in globalExceptionHandler
+2018-10-23 14:44:20.315 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:44:20.462 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-10-23 14:44:20.497 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-10-23 14:44:20.497 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-10-23 14:44:20.499 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-10-23 14:44:20.500 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-10-23 14:44:20.504 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Using Persistence Adapter: MemoryPersistenceAdapter
+2018-10-23 14:44:20.506 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:2) is starting
+2018-10-23 14:44:20.507 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:2) started
+2018-10-23 14:44:20.508 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				For help or more information please see: http://activemq.apache.org
+2018-10-23 14:44:20.511 [restartedMain] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost started
+2018-10-23 14:44:20.512 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext -
+				JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2018-10-23 14:44:20.520 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:44:20.520 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-23 14:44:20.527 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2018-10-23 14:44:20.529 [restartedMain] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Started ServerConnector@5cd229af{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:44:20.531 [restartedMain] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer -
+				Jetty started on port(s) 80 (http/1.1)
+2018-10-23 14:44:20.534 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Started StartSpringBootMain in 1.318 seconds (JVM running for 1325.704)
+2018-10-23 14:45:43.002 [Thread-29] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0b0389: startup date [Tue Oct 23 14:44:19 CST 2018]; root of context hierarchy
+2018-10-23 14:45:43.004 [Thread-29] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-10-23 14:45:43.533 [Thread-29] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-10-23 14:45:43.533 [Thread-29] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2018-10-23 14:45:43.537 [Thread-29] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost stopped
+2018-10-23 14:45:43.537 [Thread-29] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:2) is shutting down
+2018-10-23 14:45:43.541 [Thread-29] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:2) uptime 1 minute
+2018-10-23 14:45:43.541 [Thread-29] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:2) is shutdown
+2018-10-23 14:45:43.543 [Thread-29] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Stopped ServerConnector@5cd229af{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:45:43.543 [Thread-29] INFO  org.eclipse.jetty.server.session -
+				Stopped scavenging
+2018-10-23 14:45:43.545 [Thread-29] INFO  o.e.j.server.handler.ContextHandler.application -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:45:43.545 [Thread-29] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@3aacbb55{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.3439436566508224270.80/],UNAVAILABLE}
+2018-10-23 14:45:43.735 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Starting StartSpringBootMain on RJW with PID 126108 (F:\yang\microboot\microboot-base\target\classes started by Administrator in F:\yang\microboot\microboot-base)
+2018-10-23 14:45:43.735 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				The following profiles are active: dev
+2018-10-23 14:45:43.738 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39d901e9: startup date [Tue Oct 23 14:45:43 CST 2018]; root of context hierarchy
+2018-10-23 14:45:44.387 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory -
+				Server initialized with port: 80
+2018-10-23 14:45:44.387 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				jetty-9.4.5.v20170502
+2018-10-23 14:45:44.395 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				DefaultSessionIdManager workerName=node0
+2018-10-23 14:45:44.395 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				No SessionScavenger set, using defaults
+2018-10-23 14:45:44.396 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				Scavenging every 660000ms
+2018-10-23 14:45:44.398 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring embedded WebApplicationContext
+2018-10-23 14:45:44.398 [restartedMain] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 660 ms
+2018-10-23 14:45:44.454 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-10-23 14:45:44.454 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-23 14:45:44.455 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 14:45:44.455 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 14:45:44.456 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 14:45:44.457 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 14:45:44.458 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-23 14:45:44.467 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@44c7c699{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.1044168533805349339.80/],AVAILABLE}
+2018-10-23 14:45:44.468 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				Started @1409640ms
+2018-10-23 14:45:44.922 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39d901e9: startup date [Tue Oct 23 14:45:43 CST 2018]; root of context hierarchy
+2018-10-23 14:45:44.932 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/map],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.map(org.springframework.ui.Model)
+2018-10-23 14:45:44.932 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/add],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.add(cn.mldn.microboot.vo.Member,org.springframework.validation.BindingResult)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/get]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.get()
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/list],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.list(org.springframework.ui.Model)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/set],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.set(org.springframework.ui.Model)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/member_get],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.getMember(java.lang.String)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/member_show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberShow(org.springframework.ui.Model)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAddPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberAddPre()
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.memberAdd(cn.mldn.microboot.vo.Member)
+2018-10-23 14:45:44.933 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.addPre()
+2018-10-23 14:45:44.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/test]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.test()
+2018-10-23 14:45:44.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/object]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.object(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:45:44.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.echo(java.lang.String,org.springframework.ui.Model)
+2018-10-23 14:45:44.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.home()
+2018-10-23 14:45:44.934 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/inner],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.inner(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/list],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.list()
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.addPre()
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/updateStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.updatePre()
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/delStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.delPre()
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentAdd(cn.mldn.microboot.vo.Student)
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentUpdate],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(cn.mldn.microboot.vo.Student)
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentDel],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(java.lang.Integer)
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/uploadPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.uploadPre()
+2018-10-23 14:45:44.935 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/upload],methods=[POST]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.upload(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-23 14:45:44.937 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 14:45:44.937 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:45:46.503 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:45:46.503 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:45:46.514 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+				Detected @ExceptionHandler methods in globalExceptionHandler
+2018-10-23 14:45:46.522 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:45:46.680 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-10-23 14:45:46.723 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-10-23 14:45:46.723 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-10-23 14:45:46.725 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-10-23 14:45:46.726 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-10-23 14:45:46.729 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Using Persistence Adapter: MemoryPersistenceAdapter
+2018-10-23 14:45:46.730 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:3) is starting
+2018-10-23 14:45:46.730 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:3) started
+2018-10-23 14:45:46.730 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				For help or more information please see: http://activemq.apache.org
+2018-10-23 14:45:46.733 [restartedMain] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost started
+2018-10-23 14:45:46.735 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext -
+				JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2018-10-23 14:45:46.752 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:45:46.752 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-23 14:45:46.758 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2018-10-23 14:45:46.761 [restartedMain] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Started ServerConnector@38be794c{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:45:46.761 [restartedMain] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer -
+				Jetty started on port(s) 80 (http/1.1)
+2018-10-23 14:45:46.763 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Started StartSpringBootMain in 3.083 seconds (JVM running for 1411.935)
+2018-10-23 14:46:39.755 [Thread-53] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39d901e9: startup date [Tue Oct 23 14:45:43 CST 2018]; root of context hierarchy
+2018-10-23 14:46:39.758 [Thread-53] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-10-23 14:46:39.775 [Thread-53] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-10-23 14:46:39.775 [Thread-53] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2018-10-23 14:46:39.781 [Thread-53] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost stopped
+2018-10-23 14:46:39.781 [Thread-53] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:3) is shutting down
+2018-10-23 14:46:39.787 [Thread-53] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:3) uptime 53.060 seconds
+2018-10-23 14:46:39.787 [Thread-53] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:3) is shutdown
+2018-10-23 14:46:39.792 [Thread-53] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Stopped ServerConnector@38be794c{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:46:39.792 [Thread-53] INFO  org.eclipse.jetty.server.session -
+				Stopped scavenging
+2018-10-23 14:46:39.797 [Thread-53] INFO  o.e.j.server.handler.ContextHandler.application -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:46:39.797 [Thread-53] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@44c7c699{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.1044168533805349339.80/],UNAVAILABLE}
+2018-10-23 14:46:40.055 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Starting StartSpringBootMain on RJW with PID 126108 (F:\yang\microboot\microboot-base\target\classes started by Administrator in F:\yang\microboot\microboot-base)
+2018-10-23 14:46:40.055 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				The following profiles are active: dev
+2018-10-23 14:46:40.057 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feb9da6: startup date [Tue Oct 23 14:46:40 CST 2018]; root of context hierarchy
+2018-10-23 14:46:40.645 [restartedMain] INFO  o.s.b.c.e.j.JettyEmbeddedServletContainerFactory -
+				Server initialized with port: 80
+2018-10-23 14:46:40.645 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				jetty-9.4.5.v20170502
+2018-10-23 14:46:40.649 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				DefaultSessionIdManager workerName=node0
+2018-10-23 14:46:40.649 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				No SessionScavenger set, using defaults
+2018-10-23 14:46:40.649 [restartedMain] INFO  org.eclipse.jetty.server.session -
+				Scavenging every 600000ms
+2018-10-23 14:46:40.650 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring embedded WebApplicationContext
+2018-10-23 14:46:40.650 [restartedMain] INFO  org.springframework.web.context.ContextLoader -
+				Root WebApplicationContext: initialization completed in 593 ms
+2018-10-23 14:46:40.699 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-10-23 14:46:40.699 [restartedMain] INFO  o.s.boot.web.servlet.ServletRegistrationBean -
+				Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-23 14:46:40.699 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-23 14:46:40.699 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-23 14:46:40.700 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-23 14:46:40.700 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-23 14:46:40.700 [restartedMain] INFO  o.s.boot.web.servlet.FilterRegistrationBean -
+				Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-23 14:46:40.709 [restartedMain] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Started o.s.b.c.e.j.JettyEmbeddedWebAppContext@3faf7a0e{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.6100852230522402780.80/],AVAILABLE}
+2018-10-23 14:46:40.709 [restartedMain] INFO  org.eclipse.jetty.server.Server -
+				Started @1465884ms
+2018-10-23 14:46:41.123 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+				Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feb9da6: startup date [Tue Oct 23 14:46:40 CST 2018]; root of context hierarchy
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/map],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.map(org.springframework.ui.Model)
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/add],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.add(cn.mldn.microboot.vo.Member,org.springframework.validation.BindingResult)
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/get]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.get()
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/list],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.list(org.springframework.ui.Model)
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/set],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.set(org.springframework.ui.Model)
+2018-10-23 14:46:41.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/member_get],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.getMember(java.lang.String)
+2018-10-23 14:46:41.133 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/member_show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberShow(org.springframework.ui.Model)
+2018-10-23 14:46:41.133 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAddPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.memberAddPre()
+2018-10-23 14:46:41.133 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/memberAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.MemberController.memberAdd(cn.mldn.microboot.vo.Member)
+2018-10-23 14:46:41.133 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MemberController.addPre()
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/test]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.test()
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/object]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.object(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/show],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.echo(java.lang.String,org.springframework.ui.Model)
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.home()
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/message/inner],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.MessageController.inner(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2018-10-23 14:46:41.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/list],methods=[GET]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.list()
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/addStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.addPre()
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/updateStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.updatePre()
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/delStudentPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.StudentController.delPre()
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentAdd],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentAdd(cn.mldn.microboot.vo.Student)
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentUpdate],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(cn.mldn.microboot.vo.Student)
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/studentDel],methods=[POST]}" onto public java.lang.Object cn.mldn.microboot.controller.StudentController.studentUpdate(java.lang.Integer)
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/uploadPre],methods=[GET]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.uploadPre()
+2018-10-23 14:46:41.135 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/upload],methods=[POST]}" onto public java.lang.String cn.mldn.microboot.controller.UploadController.upload(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-10-23 14:46:41.136 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-23 14:46:41.136 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+				Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-23 14:46:41.147 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:46:41.147 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:46:41.153 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -
+				Detected @ExceptionHandler methods in globalExceptionHandler
+2018-10-23 14:46:41.159 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping -
+				Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-23 14:46:41.277 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer -
+				LiveReload server is running on port 35729
+2018-10-23 14:46:41.305 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Registering beans for JMX exposure on startup
+2018-10-23 14:46:41.306 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-10-23 14:46:41.308 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-10-23 14:46:41.308 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Starting beans in phase 2147483647
+2018-10-23 14:46:41.313 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Using Persistence Adapter: MemoryPersistenceAdapter
+2018-10-23 14:46:41.314 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:4) is starting
+2018-10-23 14:46:41.318 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:4) started
+2018-10-23 14:46:41.318 [restartedMain] INFO  org.apache.activemq.broker.BrokerService -
+				For help or more information please see: http://activemq.apache.org
+2018-10-23 14:46:41.321 [restartedMain] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost started
+2018-10-23 14:46:41.336 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext -
+				JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2018-10-23 14:46:41.336 [JMX connector] INFO  org.apache.activemq.broker.jmx.ManagementContext -
+				JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2018-10-23 14:46:41.358 [restartedMain] INFO  o.e.j.server.handler.ContextHandler.application -
+				Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:46:41.358 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-23 14:46:41.363 [restartedMain] INFO  org.springframework.web.servlet.DispatcherServlet -
+				FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+2018-10-23 14:46:41.365 [restartedMain] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Started ServerConnector@470a28bd{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:46:41.365 [restartedMain] INFO  o.s.b.c.e.jetty.JettyEmbeddedServletContainer -
+				Jetty started on port(s) 80 (http/1.1)
+2018-10-23 14:46:41.368 [restartedMain] INFO  cn.mldn.microboot.StartSpringBootMain -
+				Started StartSpringBootMain in 1.398 seconds (JVM running for 1466.542)
+2018-10-23 14:48:10.913 [Thread-77] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+				Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5feb9da6: startup date [Tue Oct 23 14:46:40 CST 2018]; root of context hierarchy
+2018-10-23 14:48:10.916 [Thread-77] INFO  o.s.context.support.DefaultLifecycleProcessor -
+				Stopping beans in phase 2147483647
+2018-10-23 14:48:11.377 [Thread-77] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans on shutdown
+2018-10-23 14:48:11.378 [Thread-77] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter -
+				Unregistering JMX-exposed beans
+2018-10-23 14:48:11.382 [Thread-77] INFO  org.apache.activemq.broker.TransportConnector -
+				Connector vm://localhost stopped
+2018-10-23 14:48:11.382 [Thread-77] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:4) is shutting down
+2018-10-23 14:48:11.386 [Thread-77] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:4) uptime 1 minute
+2018-10-23 14:48:11.386 [Thread-77] INFO  org.apache.activemq.broker.BrokerService -
+				Apache ActiveMQ 5.14.5 (localhost, ID:RJW-54768-1540275740666-0:4) is shutdown
+2018-10-23 14:48:11.388 [Thread-77] INFO  org.eclipse.jetty.server.AbstractConnector -
+				Stopped ServerConnector@470a28bd{HTTP/1.1,[http/1.1]}{0.0.0.0:80}
+2018-10-23 14:48:11.388 [Thread-77] INFO  org.eclipse.jetty.server.session -
+				Stopped scavenging
+2018-10-23 14:48:11.390 [Thread-77] INFO  o.e.j.server.handler.ContextHandler.application -
+				Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-10-23 14:48:11.390 [Thread-77] INFO  org.eclipse.jetty.server.handler.ContextHandler -
+				Stopped o.s.b.c.e.j.JettyEmbeddedWebAppContext@3faf7a0e{/,[file:///C:/Users/Administrator.RJW/AppData/Local/Temp/jetty-docbase.6100852230522402780.80/],UNAVAILABLE}

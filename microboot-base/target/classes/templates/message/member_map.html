@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SpringBoot模板渲染</title>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+ 	<div th:replace="@{/commons/footer}::comanyInfo"></div><!-- replace:是使用标签进行替换，原始的宿主标签还在，但是包含标签不在 -->
+ 	<div th:include="@{/commons/footer}::comanyInfo" th:with="itemid=2,subid=20"></div><!-- include:是进行包含，原始的宿主标签消失，而保留包含的标签 -->
+
+<hr/>
+		
+		<p th:text="${#maps.containsKey(memberAll,'mldn7')}"/>
+		<p th:text="${memberAll['mldn7'].aged}"/>
+		
+<hr/>
+		<table>
+			<tr><td>NO.</td><td>KEY</td><td>MID</td><td>Age</td><td>偶数</td><td>奇数</td></tr>
+			<tr th:each="member,memberStat:${memberAll}">
+			  <td th:text="${memberStat.index+1}"/>
+			  <td th:text="${member.key}"/>
+			  <td th:text="${member.value.mid}"/>
+			  <td th:text="${member.value.age}"/>
+			  <td th:text="${memberStat.even}"/>
+			  <td th:text="${memberStat.odd}"/>
+			</tr>
+		
+		</table>
+
+</body>
+
+</html>

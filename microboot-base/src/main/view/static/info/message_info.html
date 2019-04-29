@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+		<title>SpringBoot模板渲染</title>
+		<script type="text/javascript" th:src="@{/js/main.js}"></script>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+    <p th:text="'官方网站：'+${url}"/>
+    <p th:text="'官方网站：'+${mid}"/>
+    <p th:utext="'官方网站：'+${curl}"/>
+    <hr/>
+    <h2 th:text="#{welcome.url}"/>    <!--获取资源文件  -->
+    <h2 th:text="#{welcome.msg('sddd')}"/> 
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SpringBoot模板渲染</title>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+		<table>
+			<tr><td>NO.</td><td>MID</td><td>Age</td><td>偶数</td><td>奇数</td></tr>
+			<tr th:each="member,memberStat:${memberAll}">
+			  <td th:text="${memberStat.index+1}"/>
+			  <td th:text="${member.mid}"/>
+			  <td th:text="${member.age}"/>
+			  <td th:text="${memberStat.even}"/>
+			  <td th:text="${memberStat.odd}"/>
+			</tr>
+		
+		</table>
+
+</body>
+
+</html>
